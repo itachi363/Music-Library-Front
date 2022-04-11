@@ -1,25 +1,20 @@
+
+
+
 const MusicTable = (props) => {
     return ( 
         <tbody>
             {props.parentSongs.map((songs) =>{
                 return(
-                    <body>
-                        <div>
-                            {songs.title}
-                        </div>
-                        <div>
-                            {songs.artist}
-                        </div>
-                        <div>
-                            {songs.album}
-                        </div>
-                        <div>
-                            {songs.release_date}
-                        </div>
-                        <div>
-                            {songs.genre}
-                        </div>
-                    </body>
+                    <div>
+                        <h3>
+                        {songs.title}
+                        </h3>
+                        {songs.artist}
+                        {songs.album}
+                        {songs.release_date}
+                        {songs.genre}
+                    </div>
                 )
             })}
         </tbody>

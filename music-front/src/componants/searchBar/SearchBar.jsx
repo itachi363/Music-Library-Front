@@ -1,5 +1,9 @@
 const SearchBar = (props) => {
-    return (  );
+    return ( 
+        <body>
+            search
+        </body>
+     );
 }
  
 export default SearchBar;

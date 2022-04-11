@@ -1,5 +1,9 @@
 const NavigationBar = (props) => {
-    return (  );
+    return ( 
+        <body>
+            nav
+        </body>
+     );
 }
  
 export default NavigationBar;
