@@ -1,23 +1,41 @@
-
+import './MusicTable.css'
 
 
 const MusicTable = (props) => {
     return ( 
-        <tbody>
+        <table>
+        <tr>
+            <th>Title</th>
+            <th>Artist</th>
+            <th>Album</th>
+            <th>Release Date</th>
+            <th>Genre</th>
+        </tr>
             {props.parentSongs.map((songs) =>{
                 return(
-                    <div>
-                        <h3>
-                        {songs.title}
-                        </h3>
-                        {songs.artist}
-                        {songs.album}
-                        {songs.release_date}
-                        {songs.genre}
-                    </div>
+                    <tr>
+                        <td className='border-box'>
+                            {songs.title}
+                        </td>
+                        <td className='border-box'>
+                            {songs.artist}
+                        </td>
+                        <td className='border-box'>
+                            {songs.album}
+                        </td>
+                        <td className='border-box'>
+                            {songs.release_date}
+                        </td>
+                        <td className='border-box'>
+                            {songs.genre}
+                        </td>
+                        <td>
+                            <button onClick={() => props.delete(songs.id)}>Delete</button>
+                        </td>
+                    </tr>
                 )
             })}
-        </tbody>
+        </table>
      );
 }
  

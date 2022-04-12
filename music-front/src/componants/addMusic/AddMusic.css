@@ -1,0 +1,15 @@
+.spacing {
+    margin-left: 10px;
+}
+
+.border-bar {
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.text-center {
+    text-align: center;
+}
